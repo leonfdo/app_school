@@ -6,17 +6,16 @@ services :
     volumes : 
       - mongo_db:/data/db
 
+
   app : 
     build: . 
     container_name : app_container
     ports:
       - 3000:3000
     environment:
-      port : 3000
-      url : 'mongodb://mongo_db:27017/school'
-      LOG_LEVEL : "info"
+      - NODE_ENV=${NODE_ENV}
     volumes:
-      - app-logs:/usr/src/app/
+      - app-logs:/usr/src/app/logs
     depends_on:
       - mongo_db
 

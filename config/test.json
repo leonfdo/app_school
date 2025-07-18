@@ -3,8 +3,7 @@
         "port": 3000
     },
     "db":{
-        "url" : "mongodb://mongo_db:27017/school"
+        "url" : "mongodb://mongo_db:27017/school_test"
     }
 
 }
-

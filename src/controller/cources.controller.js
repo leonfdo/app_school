@@ -52,7 +52,11 @@ const updateCourceName = async (req,resp)=>{
             return resp.status(404).json(err.message)
         }
 
-            return resp.status(500).json("internal server error")
+        if(err.code===11000){
+            return resp.status(404).json("duplicate teacher email")
+        }
+
+        return resp.status(500).json("internal server error")
     }
 }
 
@@ -72,6 +76,9 @@ const createCources = async (req,resp)=>{
 
     }catch(err){
         logger.error(err.message)
+        if(err.code===11000){
+            return resp.status(404).json("duplicate cource name")
+        }
         return resp.status(500).json("internal server error")}
 
 }

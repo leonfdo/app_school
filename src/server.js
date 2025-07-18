@@ -12,7 +12,7 @@ mongoose.connect(url)
 
 
 .then(()=>{
-    console.log("connected to the database")
+    console.log(`connected to the database ${url}`)
     app.listen(port,()=>{
     console.log(`server is working on port : ${port}`)
     logger.info(`Server is running on http://localhost:${port}`);
