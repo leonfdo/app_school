@@ -21,9 +21,6 @@ npm run docker
 Use the following npm scripts to run tests:
 
 ```bash
-# For testing environment
-npm run docker:test
-
 # Run all tests (unit + integration + e2e)
 npm run test
 
