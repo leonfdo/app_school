@@ -4980,3 +4980,72 @@
 2025-07-18T10:07:28.915Z [31merror[39m: correct ID required
 2025-07-18T10:07:28.921Z [31merror[39m: No cource with this ID
 2025-07-18T10:07:28.933Z [31merror[39m: correct ID required
+2025-07-18T10:14:35.479Z [31merror[39m: Email is required
+2025-07-18T10:14:35.512Z [31merror[39m: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: "leon@gmail.com" }
+2025-07-18T10:14:35.527Z [31merror[39m: Incorrect email format
+2025-07-18T10:14:35.604Z [31merror[39m: correct ID required
+2025-07-18T10:14:35.642Z [31merror[39m: no user with this ID
+2025-07-18T10:14:35.703Z [31merror[39m: no teacher with this ID
+2025-07-18T10:14:35.966Z [31merror[39m: Name is required
+2025-07-18T10:14:36.084Z [31merror[39m: correct ID required
+2025-07-18T10:14:36.122Z [31merror[39m: No cource with this ID
+2025-07-18T10:14:36.167Z [31merror[39m: Email is required
+2025-07-18T10:14:36.200Z [31merror[39m: No cource with this ID
+2025-07-18T10:14:36.200Z [31merror[39m: E11000 duplicate key error collection: test.teachers index: email_1 dup key: { email: "leon@gmail.com" }
+2025-07-18T10:14:36.212Z [31merror[39m: correct ID required
+2025-07-18T10:14:36.244Z [31merror[39m: Name is required
+2025-07-18T10:14:36.268Z [31merror[39m: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.cources index: name_1 dup key: { name: "english" }
+2025-07-18T10:14:36.273Z [31merror[39m: correct ID required
+2025-07-18T10:14:36.314Z [31merror[39m: no teacher with this ID
+2025-07-18T10:14:36.329Z [31merror[39m: No cource with this ID
+2025-07-18T10:14:36.347Z [31merror[39m: correct ID required
+2025-07-18T10:14:36.415Z [31merror[39m: no teacher with this ID
+2025-07-18T10:14:36.434Z [31merror[39m: correct ID required
+2025-07-18T10:14:36.522Z [31merror[39m: no teacher with this ID
+2025-07-18T10:14:36.538Z [31merror[39m: correct ID required
+2025-07-18T10:23:39.519Z [31merror[39m: Email is required
+2025-07-18T10:23:39.561Z [31merror[39m: E11000 duplicate key error collection: test.teachers index: email_1 dup key: { email: "leon@gmail.com" }
+2025-07-18T10:23:39.651Z [31merror[39m: correct ID required
+2025-07-18T10:23:39.690Z [31merror[39m: no teacher with this ID
+2025-07-18T10:23:39.762Z [31merror[39m: no teacher with this ID
+2025-07-18T10:23:39.775Z [31merror[39m: correct ID required
+2025-07-18T10:23:39.860Z [31merror[39m: Name is required
+2025-07-18T10:23:39.866Z [31merror[39m: no teacher with this ID
+2025-07-18T10:23:39.882Z [31merror[39m: correct ID required
+2025-07-18T10:23:39.998Z [31merror[39m: correct ID required
+2025-07-18T10:23:40.037Z [31merror[39m: No cource with this ID
+2025-07-18T10:23:40.083Z [31merror[39m: Email is required
+2025-07-18T10:23:40.115Z [31merror[39m: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: "leon@gmail.com" }
+2025-07-18T10:23:40.128Z [31merror[39m: No cource with this ID
+2025-07-18T10:23:40.135Z [31merror[39m: Incorrect email format
+2025-07-18T10:23:40.148Z [31merror[39m: correct ID required
+2025-07-18T10:23:40.185Z [31merror[39m: Name is required
+2025-07-18T10:23:40.217Z [31merror[39m: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.cources index: name_1 dup key: { name: "english" }
+2025-07-18T10:23:40.251Z [31merror[39m: correct ID required
+2025-07-18T10:23:40.271Z [31merror[39m: No cource with this ID
+2025-07-18T10:23:40.286Z [31merror[39m: correct ID required
+2025-07-18T10:23:40.295Z [31merror[39m: no user with this ID
+2025-07-18T10:23:40.356Z [31merror[39m: no teacher with this ID
+2025-07-18T10:24:29.342Z [31merror[39m: Email is required
+2025-07-18T10:24:29.368Z [31merror[39m: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: "leon@gmail.com" }
+2025-07-18T10:24:29.386Z [31merror[39m: Incorrect email format
+2025-07-18T10:24:29.488Z [31merror[39m: correct ID required
+2025-07-18T10:24:29.532Z [31merror[39m: no user with this ID
+2025-07-18T10:24:29.608Z [31merror[39m: no teacher with this ID
+2025-07-18T10:24:29.613Z [31merror[39m: Name is required
+2025-07-18T10:24:29.709Z [31merror[39m: correct ID required
+2025-07-18T10:24:29.747Z [31merror[39m: No cource with this ID
+2025-07-18T10:24:29.810Z [31merror[39m: Email is required
+2025-07-18T10:24:29.821Z [31merror[39m: No cource with this ID
+2025-07-18T10:24:29.842Z [31merror[39m: correct ID required
+2025-07-18T10:24:29.848Z [31merror[39m: E11000 duplicate key error collection: test.teachers index: email_1 dup key: { email: "leon@gmail.com" }
+2025-07-18T10:24:29.877Z [31merror[39m: Name is required
+2025-07-18T10:24:29.909Z [31merror[39m: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: test.cources index: name_1 dup key: { name: "english" }
+2025-07-18T10:24:29.955Z [31merror[39m: correct ID required
+2025-07-18T10:24:29.964Z [31merror[39m: No cource with this ID
+2025-07-18T10:24:29.975Z [31merror[39m: correct ID required
+2025-07-18T10:24:29.995Z [31merror[39m: no teacher with this ID
+2025-07-18T10:24:30.083Z [31merror[39m: no teacher with this ID
+2025-07-18T10:24:30.097Z [31merror[39m: correct ID required
+2025-07-18T10:24:30.172Z [31merror[39m: no teacher with this ID
+2025-07-18T10:24:30.179Z [31merror[39m: correct ID required

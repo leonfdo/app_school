@@ -10,7 +10,7 @@
     "test:integration": "NODE_ENV=test docker compose up --build -d && npm i jest && jest --selectProjects integration && docker compose down",
     "test:e2e": "NODE_ENV=test docker compose up --build -d && npm i jest && jest --selectProjects e2e && docker compose down",
     "docker:test": "NODE_ENV=test docker compose up --build -d && npm i jest",
-    "docker": "NODE_ENV=default docker compose up --build -d"
+    "docker": "NODE_ENV=default docker compose up --build -d && npm i jest"
   },
   "keywords": [],
   "author": "",
