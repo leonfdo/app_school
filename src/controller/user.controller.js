@@ -7,6 +7,7 @@ const logger = require("../logger.js")
 const getUsers = async (req,resp)=>{
     try{
             const users = await UserServices.getUsers()
+            logger.info("getUsers API hit")
             return resp.status(200).json(users)
         }catch(err){
             logger.error(err.message)
@@ -25,6 +26,7 @@ const createUser = async (req,resp)=>{
             }
 
             const product = await UserServices.createUser(req_body)
+            logger.info("createUser API hit")
             return resp.status(200).json(product)
         }catch(err){
             logger.error(err.message)
@@ -48,6 +50,7 @@ const updateUser = async (req,resp)=>{
 
 
         await UserServices.updateUser(user_id,req_body)
+        logger.info("updateUser API hit")
         return resp.status(200).json("succefully updated")
     }catch(err){
         logger.error(err.message)
@@ -70,7 +73,7 @@ const deleteUser = async (req,resp)=>{
     try{
         const user_id = req.params.id;
         await UserServices.deleteUser(user_id)
-
+        logger.info("deleteUser API hit")
         return resp.status(200).json("succefully Deleted")
     }catch(err){
         logger.error(err.message)
@@ -86,6 +89,7 @@ const getUser = async (req,resp)=>{
     try{
         const user_id = req.params.id
         const user_data = await UserServices.getUser(user_id)
+        logger.info("getUser API hit")
         return resp.status(200).json(user_data)
     }catch(err){
         logger.error(err.message)
@@ -103,7 +107,7 @@ const joinUserCource = async(req,resp)=>{
 
         const cource_id = req.body.cource
         await UserServices.joinUserCource(user_id,cource_id)
-
+        logger.info("joinUserCource API hit")
         return resp.status(200).json("succefully updated")
 
     }catch(err){
@@ -125,6 +129,7 @@ const removeUserCource = async(req,resp)=>{
 
         const cource_id = req.params.cource;
         await UserServices.removeUserCource(user_id,cource_id)
+        logger.info("removeUserCources API hit")
         return resp.status(200).json("succefully removed")
 
     }catch(err){
@@ -138,6 +143,7 @@ const getUserCources = async (req,resp)=>{
     try{
         const user_id = req.params.id
         const user_data = await UserServices.getUserCources(user_id)
+        logger.info("getUserCources API hit")
         return resp.status(200).json(user_data)
 
 

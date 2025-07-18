@@ -7,6 +7,7 @@ const logger = require("../logger.js")
 const getTeachers = async (req,resp) =>{
     try{
         const teachers = await TeacherServices.getTeachers()
+        logger.info("getTeachers API hit")
         return resp.status(200).json(teachers)
     }catch(err){
             logger.error(err.message)
@@ -26,6 +27,7 @@ const createTeacher = async (req,resp)=>{
         }
 
         const teacher_detail = await TeacherServices.createTeacher(req_body)
+        logger.info("createTeacher API hit")
         return resp.status(200).json(teacher_detail)
 
 
@@ -48,7 +50,7 @@ const deleteTeacher = async (req,resp)=>{
         const teacher_id = req.params.id;
 
         const teacher = await TeacherServices.deleteTeacher(teacher_id)
-
+        logger.info("deleteTeacher API hit")
         return resp.status(200).json("succefully Deleted")
     }catch(err){
         logger.error(err.message)
@@ -73,7 +75,7 @@ const updateTeacher = async (req,resp)=>{
         }
 
         const update_teacher = await TeacherServices.updateTeacher(teacher_id,req_body)
-
+        logger.info("updateTeacher API hit")
         return resp.status(200).json("succefully updated")
 
     }catch(err){
@@ -94,6 +96,7 @@ const getTeacher = async (req,resp)=>{
     try{
         const teacher_id = req.params.id
         const teacher_data = await TeacherServices.getTeacher(teacher_id)
+        logger.info("getTeacher API hit")
         return resp.status(200).json(teacher_data)
 
     }catch(err){
@@ -110,7 +113,7 @@ const getTeacherCources = async (req,resp)=>{
         const teacher_id = req.params.id
 
         const cource_data = await TeacherServices.getTeacherCources(teacher_id)
-
+        logger.info("getTeacherCources API hit")
         return resp.status(200).json(cource_data)
 
     }catch(err){
@@ -130,6 +133,7 @@ const setTeacherCources = async (req,resp)=>{
             const cource_id = req.body.cource
 
             await TeacherServices.setTeacherCources(teacher_id,cource_id)
+            logger.info("setTeacherCources API hit")
             return resp.status(200).json("succefully updated")
     
         }catch(err){
@@ -149,7 +153,7 @@ const removeTeacherCource = async(req,resp)=>{
         const cource_id = req.body.cource;
 
         await TeacherServices.removeTeacherCource(teacher_id,cource_id)
-
+        logger.info("removeTeacherCource API hit")
         return resp.status(200).json("succefully removed")
 
     }catch(err){

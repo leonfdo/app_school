@@ -7,6 +7,7 @@ const logger = require("../logger.js")
 const getCources = async (req,resp) =>{
     try{
         const cources = await CourceServices.getCources()
+        logger.info("getCources API hit")
         return resp.status(200).json(cources)
     }catch(err){
         logger.error(err.message)
@@ -20,6 +21,7 @@ const getCource = async (req,resp)=>{
         const cource_id = req.params.id
         let cource_data
         cource_data = await CourceServices.getCource(cource_id)
+        logger.info("getCource API hit")
         return resp.status(200).json(cource_data)
 
     }catch(err){
@@ -44,6 +46,7 @@ const updateCourceName = async (req,resp)=>{
         }
 
         await CourceServices.updateCourceName(cource_id,req_body)
+        logger.info("updateCourceName API hit")
         return resp.status(200).json("succefully updated")
 
     }catch(err){
@@ -72,6 +75,7 @@ const createCources = async (req,resp)=>{
         }  
 
         const cource_detail = await CourceServices.createCources(req_body)
+        logger.info("createCources API hit")
         return resp.status(200).json(cource_detail)
 
     }catch(err){
@@ -89,6 +93,7 @@ const deleteCources = async (req,resp)=>{
     try{
         const cource_id = req.params.id;
         const cource_data = await CourceServices.deleteCources(cource_id)
+        logger.info("deleteCources API hit")
         return resp.status(200).json("succefully Deleted")
 
         
