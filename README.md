@@ -10,7 +10,7 @@ To build and start the application using Docker:
 
 ```bash
 # For default environment
-NODE_ENV=default docker compose up --build
+npm run docker
 
 ```
 
@@ -22,7 +22,7 @@ Use the following npm scripts to run tests:
 
 ```bash
 # For testing environment
-NODE_ENV=test docker compose up --build
+npm run docker:test
 
 # Run all tests (unit + integration + e2e)
 npm run test
