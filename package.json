@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test docker compose up --build -d && jest && docker compose down",
+    "test": "NODE_ENV=test docker compose up --build -d && npm i jest && jest && docker compose down",
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "test:unit": "NODE_ENV=test docker compose up --build -d && jest --selectProjects unit && docker compose down",
-    "test:integration": "NODE_ENV=test docker compose up --build -d && jest --selectProjects integration && docker compose down",
-    "test:e2e": "NODE_ENV=test docker compose up --build -d && jest --selectProjects e2e && docker compose down",
-    "docker:test": "NODE_ENV=test docker compose up --build -d",
-    "docker" : "NODE_ENV=default docker compose up --build -d"
+    "test:unit": "NODE_ENV=test docker compose up --build -d && npm i jest && jest --selectProjects unit && docker compose down",
+    "test:integration": "NODE_ENV=test docker compose up --build -d && npm i jest && jest --selectProjects integration && docker compose down",
+    "test:e2e": "NODE_ENV=test docker compose up --build -d && npm i jest && jest --selectProjects e2e && docker compose down",
+    "docker:test": "NODE_ENV=test docker compose up --build -d && npm i jest",
+    "docker": "NODE_ENV=default docker compose up --build -d"
   },
   "keywords": [],
   "author": "",
